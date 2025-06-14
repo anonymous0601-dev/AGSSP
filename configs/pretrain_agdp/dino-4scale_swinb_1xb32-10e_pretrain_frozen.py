@@ -4,7 +4,7 @@ _base_ = [
 
 data_root = '/XXX/datasets/collection_of_images/pretrain_distill_1017/'
 class_name = ('anomaly')
-num_classes = len(class_name)
+num_classes = 1 # len(class_name)
 metainfo = dict(classes=class_name, palette='random')  
 custom_imports = dict(imports=['mmdet.models'], allow_failed_imports=False)
 

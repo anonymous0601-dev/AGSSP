@@ -2,7 +2,7 @@ _base_ = '../yolov8/yolov8_s_syncbn_fast_8xb16-500e_coco.py'
 
 data_root = '/XXX/datasets/collection_of_images/pretrain_distill_1017/'
 class_name = ('anomaly')
-num_classes = len(class_name)
+num_classes = 1 # len(class_name)
 metainfo = dict(classes=class_name, palette='random')
 
 work_dir = './work_dirs/metal_distill_multi_frozen/yolov8_s_syncbn_fast_1xb32-10e_pretrain_frozen'
