@@ -11,6 +11,16 @@ Pretrained models are commonly employed to improve finetuning performance in met
 pip3 install -r requirements.txt
 ```
 
+### Anomaly Map Generation
+```bash
+# generate anomaly map
+cd KeAD/
+sh zero_shot_plain_base.sh
+
+# anomaly map to yolo txt
+python generate_yolo_box_from_anomaly.py
+```
+
 ## Pre-training and Fine-tuning Instructions
 ### Pre-training
 ```bash
